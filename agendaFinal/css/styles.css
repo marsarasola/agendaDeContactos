@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+*,
+*::before,
+**::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.date-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: #cfbaa7;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Gruppo';
+    font-weight: bold;
+    background-image: url(../assets/img.jpg);
+}
+
+main {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-inline: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+    background-color: rgba(171, 126, 103, 255);
+    border-radius: 15px;
+    box-shadow: 6px 5px 5px;
+    font-family: 'Gruppo';
+}
+
+form input {
+    margin: 2px;
+    padding: 3px 15px;
+    height: 2rem;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1ex;
+    background-color: #cfbaa7;
+    font-weight: bolder;
+    font-family: 'Gruppo';
+}
+
+form button {
+    margin-top: 30px;
+    padding: 2px 20px;
+    height: 2rem;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #cfbaa7;
+    font-weight: bold;
+    font-family: 'Gruppo';
+}
+
+form button:hover {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #cfbaa7;
+    font-family: 'Gruppo';
+}
+
+.agenda {
+    margin: 1rem auto;
+    width: 55%;
+    min-width: 500px;
+    max-height: 400px;
+    overflow: hidden;
+    background-color: rgba(171, 126, 103, 255);
+    border-radius: 15px;
+    box-shadow: 6px 5px 5px;
+    font-family: 'Gruppo';
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.mostly-customized-scrollbar {
+    display: block;
+    width: 10em;
+    overflow: auto;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+.contacto {
+    background-color: #cfbaa7;
+    max-width: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    justify-content: space-between;
+    margin: 20px;
+    position: relative;
+    font-family: 'Gruppo';
+}
+
+.contacto>span {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacto button {
+    position: absolute;
+    top: -2rem;
+    padding: .5rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: none;
+    cursor: pointer;
+}
+
+.contacto:hover>button {
+    display: inline-block;
+}
+
+.edit-btn {
+    left: 15%;
+    background-color: rgba(84, 123, 143, 0.79);
+}
+
+.delete-btn {
+    right: 15%;
+    background-color: rgba(156, 68, 39, 0.719);
+}
+
+@media(min-width:900px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contacto {
+        border: 3px solid #cfbaa7;
+        margin: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contacto>span {
+        padding: 20px;
+        justify-content: space-between;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    .agenda {
+        width: 50%;
+    }
+
+}
+
+

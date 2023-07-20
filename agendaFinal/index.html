@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/img.jpg">
+    <title>AGENDA</title>
+</head>
+
+<body>
+    <header>
+        <h1>AGENDA</h1>
+
+        <div class="date-clock">
+            <div class="date">
+                <span id="weekDay" class="weekDay"></span>,
+                <span id="day" class="day"></span> de
+                <span id="month" class="month"></span> del
+                <span id="year" class="year"></span>
+            </div>
+            <div class="clock">
+                <span id="hours" class="hours"></span> :
+                <span id="minutes" class="minutes"></span> :
+                <span id="seconds" class="seconds"></span>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <form>
+            <h2>Añadir Contacto</h2>
+            <label for="name">
+                <input type="text" placeholder="Nombre de contacto..." id="name">
+            </label>
+            <label for="tel">
+                <input type="number" id="tel" placeholder="Telefono del contacto...">
+            </label>
+            <label for="mail">
+                <input type="email" id="mail" placeholder="Email del contacto...">
+            </label>
+            <button type="submit" id="add-btn">
+                Añadir
+            </button>
+        </form>
+        <div class="agenda mostly-customized-scrollbar" id="agenda">
+            <h2>Contactos</h2>
+        </div>
+    </main>
+    <footer>
+        <span> ©️ Martina Sarasola </span>
+    </footer>
+
+    <script src="./script/script.js"></script>
+    <script src="./script/clock.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
